@@ -156,6 +156,4 @@ where the matrix $\mathbf{\Lambda}$ controls how strongly different directions i
 
 Making this explicitly dependent on augmentation identity could allow the model to respond differently to symmetry transformations, detector-scale fluctuations, and information-removing perturbations. Other possibilities include applying different augmentations at different network depths or learning multiple representation subspaces for different physical scales.
 
-Before drawing stronger conclusions, I would also repeat the sweep across several random seeds and add single- and two-augmentation experiments to separate individual effects from interactions.
-
 The main lesson from this project is that augmentation is not merely a technical preprocessing choice. In self-supervised learning, it defines which differences the model is encouraged to forget—and therefore plays a direct role in deciding which physics the final representation can retain.
