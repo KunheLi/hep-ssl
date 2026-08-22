@@ -31,7 +31,7 @@ Information from the graph was then pooled into a 64-dimensional event embedding
 
 The projection head was used only for this contrastive objective; the downstream analysis used the 64-dimensional event embedding produced by the encoder.
 
-![Pairwise self-supervised learning workflow](figures/pairwise_ssl_workflow.png)
+![Pairwise self-supervised learning workflow](figures/workflow.png)
 
 *Figure 1. The pairwise self-supervised workflow. Two independently augmented views of the same calorimeter event are projected into $\eta$–$\phi$ graphs, encoded into event-level representations, and compared through the InfoNCE objective.*
 
