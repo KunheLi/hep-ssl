@@ -23,7 +23,7 @@ A graph neural network is also a natural choice because calorimeter measurements
 
 ## Learning an Event Representation Without Labels
 
-I began with a self-supervised framework developed by Aneek and adapted it into a controlled study of calorimeter augmentations. Each event started as a collection of hits containing three-dimensional positions and deposited energies. The same augmentation sequence and parameter scales were used to construct two views of the event, but the actual rotation angles, energy fluctuations, coordinate shifts, and crop locations were sampled independently.
+I began with a self-supervised framework developed by my graduate mentor Aneek Jana and adapted it into a controlled study of calorimeter augmentations. Each event started as a collection of hits containing three-dimensional positions and deposited energies. The same augmentation sequence and parameter scales were used to construct two views of the event, but the actual rotation angles, energy fluctuations, coordinate shifts, and crop locations were sampled independently.
 
 The resulting hits were projected onto a $32 \times 32$ grid in pseudorapidity $\eta$ and azimuthal angle $\phi$, two coordinates commonly used to describe directions in collider detectors. Nonempty cells became graph nodes, and a graph neural network used dynamic $k$-nearest-neighbor connections to decide which cells should exchange information. Because these neighborhoods were formed in a learned coordinate space, the network was not restricted to a fixed geometric graph.
 
